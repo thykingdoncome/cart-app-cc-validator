@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: url('https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: 2px 3px 4px black;
+    background: black;
+    color: red;
+    padding: 0 1em;
+    border-radius: 4px;
+}
+
+[data-cart-info],
+[data-credit-card] {
+    width: 100%;
+}
+
+[data-cc-info] input:focus,
+[data-cc-digits] input:focus {
+    outline: none;
+}
+
+.mdc-card__primary-action,
+.mdc-card__primary-action:hover {
+    cursor: auto;
+    min-height: inherit;
+}
+
+[data-credit-card] [data-card-type] {
+    transition: width 1.5s;
+    margin-left: calc(100% - 130px);
+}
+
+.is-visa {
+    background: linear-gradient(135deg, #622774 0%, #c53364 100%);
+}
+
+.is-mastercard {
+    background: linear-gradient(135deg, #65799b 0%, #5e2563 100%);
+}
+
+.fit-card-image{
+    width: 120px;
+    height: 60px;
+    float: right;
+}
+
+.is-visa [data-card-type],
+.is-mastercard [data-card-type] {
+    width: auto;
+}
+
+input.is-invalid,
+.is-invalid input {
+    text-decoration: line-through;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+[data-cart-info] span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1em 0;
+}
+
+.material-icons {
+    font-size: 1.7em;
+}
+
+[data-credit-card] {
+    min-height: 240px;
+    border-radius: 10px;
+    background: #24292e;
+    padding: 1em;
+}
+
+[data-card-type] img {
+    display: block;
+    width: 120px;
+    height: 60px;
+}
+
+[data-cc-digits] {
+    margin: 2em 0 0 0;
+}
+
+[data-cc-digits] input {
+    color: white;
+    font-size: 2em;
+    line-height: 2em;
+    border: none;
+    background: none;
+    margin: 0 0.5em 0 0;
+    display: inline-flex;
+}
+
+[data-bill] {
+    color: white;
+}
+
+[data-cc-info] {
+    margin: 1em 0 0 0;
+}
+
+[data-cc-info] input {
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    background: none;
+}
+
+[data-cc-info] input:nth-of-type(2) {
+    padding: 0 10px;
+    float: right;
+}
+
+[data-pay-btn] {
+    width: 100%;
+    border: 1px solid;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s;
+    outline: 0;
+}
+
+[data-pay-btn]:hover {
+    background: red;
+    color: white;
+    border:  1px solid black;
+}
